@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/5/15.
  */
-public class AboutOpera extends Activity {
+public class AboutOpera extends Activity implements View.OnClickListener {
 
     private Button google;
 

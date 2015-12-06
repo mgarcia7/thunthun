@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/4/15.
  */
-public class OptionsPage3 extends Activity {
+public class OptionsPage3 extends Activity implements View.OnClickListener {
 
     private Button gardnerMuseum;
     private Button MFA;
@@ -22,15 +22,16 @@ public class OptionsPage3 extends Activity {
     private Button opera;
 
     @Override
-    private void onCreate(Bundle savedInstanceState) {
+    //used to be private, changed this to protected because it fixed my error!! lmk if this is not a thing that can be done
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_optionspage3);
 
         gardnerMuseum = (Button) findViewById(R.id.gardnermuseumbutton);
         MFA = (Button) findViewById(R.id.mfabutton);
-        symphony = (Button) findViewById(R.id.symphony);
+        symphony = (Button) findViewById(R.id.symphonybutton);
         childrens = (Button) findViewById(R.id.childrensbutton);
-        contemporary = (Button) findViewById(R.id.contempatorybutton);
+        contemporary = (Button) findViewById(R.id.contemporarybutton);
         aquarium = (Button) findViewById(R.id.aquariumbutton);
         BPL = (Button) findViewById(R.id.bplbutton);
         science = (Button) findViewById(R.id.sciencebutton);

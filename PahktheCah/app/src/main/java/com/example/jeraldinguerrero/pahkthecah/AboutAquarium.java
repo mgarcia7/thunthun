@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/5/15.
  */
-public class AboutAquarium extends Activity {
+public class AboutAquarium extends Activity implements View.OnClickListener {
 
     private Button google;
 

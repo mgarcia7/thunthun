@@ -25,7 +25,7 @@
     <string name="welcome">Welcome to Boston!</string>
     <string name="backgroundtext">As Boston University college of engineering students we have first
         hand experience of being in Boston, but we also have first hand experience of never
-        exploring the city because we're always too busy. We created this app in order to help other
+        exploring the city because we\'re always too busy. We created this app in order to help other
         non-Bostonians find their way around some of the hot spots in Boston. We offer 3 different
         types of tours ranging from history to arts and even sports to appeal to a large range of
         tourists. We hope you enjoy using our app! </string>
@@ -43,7 +43,7 @@
     <string name="title_activity_aboutpage">aboutpage</string>
     <string name="title_activity_about_agganis">aboutAgganis</string>
     <string name="agganispage">Agganis Arena</string>
-    <string name="aboutagganis">Located within Boston University's $225 million John Hancock Student Village — a 10-acre hub of activity designed to be the thriving center of student life and athletics — Agganis Arena is a multipurpose sports and entertainment center.</string>
+    <string name="aboutagganis">Located within Boston University\'s $225 million John Hancock Student Village — a 10-acre hub of activity designed to be the thriving center of student life and athletics — Agganis Arena is a multipurpose sports and entertainment center.</string>
     <string name="title_activity_about_aquarium">aboutAquarium</string>
     <string name="aquariumpage">New England Aquarium</string>
     <string name="aboutaquarium">Founded in 1969, the New England Aquarium is a global leader in ocean exploration and marine conservation. Look out for the popular Whale Watch in the Spring.</string>
@@ -60,8 +60,8 @@
     <string name="aboutbpl">Established in 1948, the Boston Public Library (BPL) was the first large free municipal library in the United States. Within its collection of 23 million items, the library boasts a wealth of rare books and manuscripts, maps, musical scores and prints
 </string>
     <string name="title_activity_about_cask">aboutCask</string>
-    <string name="caskpage">Cask’n Flagon</string>
-    <string name="aboutcask">The now World Famous Cask 'n Flagon began as a small neighborhood bar known as Olivers. What was once known as the little bar on the corner of Brookline Avenue is now a landmark location for diehard Red Sox fans, college students, locals and tourists.
+    <string name="caskpage">Cask\’n Flagon</string>
+    <string name="aboutcask">The now World Famous Cask \'n Flagon began as a small neighborhood bar known as Olivers. What was once known as the little bar on the corner of Brookline Avenue is now a landmark location for diehard Red Sox fans, college students, locals and tourists.
 </string>
     <string name="title_activity_about_cemetary">aboutCemetary</string>
     <string name="cemetarypage">Granary Burying Ground</string>

@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/4/15.
  */
-public class OptionsPage2 extends Activity {
+public class OptionsPage2 extends Activity implements View.OnClickListener {
 
     private Button agganis;
     private Button fenway;
@@ -33,8 +33,8 @@ public class OptionsPage2 extends Activity {
         TDGarden = (Button) findViewById(R.id.tdgardenbutton);
         fours = (Button) findViewById(R.id.foursbutton);
         beerworks = (Button) findViewById(R.id.beerworksbutton);
-        mcganns = (Button) findViewById(R.id.mcganns);
-        hurricane = (Button) findViewById(R.id.hurricane);
+        mcganns = (Button) findViewById(R.id.mcgannsbutton);
+        hurricane = (Button) findViewById(R.id.hurricanebutton);
 
         agganis.setOnClickListener(this);
         fenway.setOnClickListener(this);

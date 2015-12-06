@@ -75,8 +75,8 @@ public class MainActivity extends Activity implements OnClickListener {
                 public void onSuccess(LoginResult loginResult) {
                     AccessToken accessToken = AccessToken.getCurrentAccessToken(); //might not need this
                     Profile profile = Profile.getCurrentProfile();
-                    EditText name = (EditText) findViewById(R.id.FB_name);
-                    name.setText(profile.getName());
+                    //EditText name = (EditText) findViewById(R.id.FB_name);
+                    //name.setText(profile.getName());
                     //we need to create a user name here into the text file
 
                 }

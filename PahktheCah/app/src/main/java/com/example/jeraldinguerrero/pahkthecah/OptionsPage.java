@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/3/15.
  */
-public class OptionsPage extends Activity {
+public class OptionsPage extends Activity implements View.OnClickListener {
     private Button trinity;
     private Button bostonCommons;
     private Button cemetary;
@@ -31,9 +31,9 @@ public class OptionsPage extends Activity {
         massacre = (Button) findViewById(R.id.massacrebutton);
         freedomTrail = (Button) findViewById(R.id.freedomtrailbutton);
         faneuilHall = (Button) findViewById(R.id.faneuilhallbutton);
-        revereHouse = (Button) findViewById(R.id.reversehousebutton);
+        revereHouse = (Button) findViewById(R.id.reverehousebutton);
         oldNorthChurch = (Button) findViewById(R.id.oldnorthchurchbutton);
-        constitution = (Button) findViewById(R.id.constitutionButton);
+        constitution = (Button) findViewById(R.id.constitutionbutton);
 
 
         trinity.setOnClickListener(this);

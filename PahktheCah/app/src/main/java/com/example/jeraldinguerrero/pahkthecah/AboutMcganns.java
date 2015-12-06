@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/5/15.
  */
-public class AboutMcganns extends Activity {
+public class AboutMcganns extends Activity implements View.OnClickListener {
 
     private Button google;
 
@@ -17,7 +17,7 @@ public class AboutMcganns extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.aboutMcganns);
+        setContentView(R.layout.aboutmcganns);
         google = (Button) findViewById(R.id.googleButton);
 
         google.setOnClickListener(this);

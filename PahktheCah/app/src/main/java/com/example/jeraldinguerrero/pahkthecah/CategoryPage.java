@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/3/15.
  */
-public class CategoryPage extends Activity {
+public class CategoryPage extends Activity implements View.OnClickListener {
 
     //Initializes buttons on category page
     private Button historical;
@@ -25,12 +25,12 @@ public class CategoryPage extends Activity {
         setContentView(R.layout.content_categorypage);
 
         historical = (Button) findViewById(R.id.historicalbutton);
-        sports = (Button) findViewById(R.id.sportsButton);
+        sports = (Button) findViewById(R.id.sportsbutton);
         arts = (Button) findViewById(R.id.artsbutton);
 
-        historical.setOnClickListener(this);
-        sports.setOnClickListener(this);
-        arts.setOnClickListener(this);
+        historical.setOnClickListener((View.OnClickListener)this);
+        sports.setOnClickListener((View.OnClickListener) this);
+        arts.setOnClickListener((View.OnClickListener) this);
     }
 
     @Override

@@ -9,7 +9,7 @@ import android.widget.Button;
 /**
  * Created by jeraldinguerrero on 12/5/15.
  */
-public class AboutFreedomTrail extends Activity {
+public class AboutFreedomTrail extends Activity implements View.OnClickListener {
 
     private Button google;
 
