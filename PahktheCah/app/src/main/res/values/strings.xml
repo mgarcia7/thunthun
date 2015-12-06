@@ -8,4 +8,68 @@
     <string name="ToLogOutScreen">Log Out</string>
     <string name="CancelAction">Cancel</string>
     <string name="to_map_button">Take Me There!</string>
+    
+    <string name="McGanns">McGann’s is one of the Boston’s most historic Irish Pubs straight from Doolin, Ireland.</string>
+    <string name="mfa">The Museum of Fine Arts is one of the most comprehensive art museums in the world with the collection encompassing nearly 450000 works of arts. </string>
+    <string name="oldnorthchurch">On the steeple of Old North Church, Boston’s oldest Church building, Robert Newman signaled with lanterns the approach of the British regulars. The steeple was the tallest steeple in Boston and the bells within were the first ever brought to America.</string>
+    <string name="operahouse">The Boston Opera House hosts the region’s most active program of top touring Broadway shows, Boston Ballet performances and other high-quality cultural presentations and concerts in New England’s most magnificent theater. </string>
+    <string name="reverehouse">The oldest building in downtown Boston, the Paul Revere House served as the home of its namesake and his family. Paul Revere is famous for his “midnight ride” to inform patriots that the British were coming to arrest them.</string>
+    <string name="sciencemuseum">Along with over 700 interactive exhibits, the Museum of Science features a number of live presentations throughout the building every day, along with shows at the Charles Hayden Planetarium and the Mugar Omni Theater, the only domed IMAX screen in New England. </string>
+    <string name="symphonyhall">Now in its 134th season, the Boston Symphony Orchestra gave its inaugural concert in 1881. Experienced members of the Boston Symphony unfold the history of the Orchestra-its musicians, conductors, and supporters-as well as offer information about the Hall in behind-the-scenes tours. </string>
+    <string name="tdgarden">Since its grand opening in 1995, more than 30 million people have come to the TD Garden to see the arena’s famous tenants, the NHL’s Boston Bruins and NBA’s Boston Celtics. Home to approximately 200 public events annually, the TD Garden hosts well over 3.5 million people each year! </string>
+    <string name="trinitychurch">Housed in a grand and historic building consistently ranked as one of America’s most significant architectural landmarks, the Trinity Church houses a thriving Christian community in the heart of Boston’s Back Bay. </string>
+
+    <string name="subtitle">Guided Tours Around Boston</string>
+    <string name="start_tour">Start Tour</string>
+    <string name="about">Background</string>
+    <string name="welcome">Welcome to Boston!</string>
+    <string name="backgroundtext">As Boston University college of engineering students we have first
+        hand experience of being in Boston, but we also have first hand experience of never
+        exploring the city because we're always too busy. We created this app in order to help other
+        non-Bostonians find their way around some of the hot spots in Boston. We offer 3 different
+        types of tours ranging from history to arts and even sports to appeal to a large range of
+        tourists. We hope you enjoy using our app! </string>
+    <string name="pro">(Park the Car)</string>
+    <string name="title_activity_optionspage">optionspage</string>
+    <string name="historicaltours">Select a place from below!</string>
+    <string name="categorypagetitle">Please select a category:</string>
+    <string name="artsbutton">Arts and Museums</string>
+    <string name="historicalbutton">Historical</string>
+    <string name="sportsbutton">Sports</string>
+    <string name="title_activity_optionspage2">optionspage2</string>
+    <string name="title_activity_optionspage3">optionspage3</string>
+    <string name="title_activity_categorypage">categorypage</string>
+    <string name="title_activity_loginpage">loginpage</string>
+    <string name="title_activity_aboutpage">aboutpage</string>
+    <string name="title_activity_about_agganis">aboutAgganis</string>
+    <string name="agganispage">Agganis Arena</string>
+    <string name="aboutagganis">Located within Boston University's $225 million John Hancock Student Village — a 10-acre hub of activity designed to be the thriving center of student life and athletics — Agganis Arena is a multipurpose sports and entertainment center.</string>
+    <string name="title_activity_about_aquarium">aboutAquarium</string>
+    <string name="aquariumpage">New England Aquarium</string>
+    <string name="aboutaquarium">Founded in 1969, the New England Aquarium is a global leader in ocean exploration and marine conservation. Look out for the popular Whale Watch in the Spring.</string>
+    <string name="title_activity_about_beerworks">aboutBeerworks</string>
+    <string name="beerworkspage">Boston Beer Works</string>
+    <string name="aboutbeerworkspage">Another popular Boston Sports Bar, Boston Beer Works offers freshly prepared foods, hand-crafted beers and friendly service in a fun and energetic setting for any occasion.
+</string>
+    <string name="title_activity_about_bostoncommon">aboutBostoncommon</string>
+    <string name="bostoncommon">Boston Commons</string>
+    <string name="aboutbostoncommon">The starting point of the Freedom Trail, Boston Common is the oldest park in the country. The park is almost 50 acres in size.
+</string>
+    <string name="title_activity_about_bpl">aboutBpl</string>
+    <string name="bplpage">Boston Public Library</string>
+    <string name="aboutbpl">Established in 1948, the Boston Public Library (BPL) was the first large free municipal library in the United States. Within its collection of 23 million items, the library boasts a wealth of rare books and manuscripts, maps, musical scores and prints
+</string>
+    <string name="title_activity_about_cask">aboutCask</string>
+    <string name="caskpage">Cask’n Flagon</string>
+    <string name="aboutcask">The now World Famous Cask 'n Flagon began as a small neighborhood bar known as Olivers. What was once known as the little bar on the corner of Brookline Avenue is now a landmark location for diehard Red Sox fans, college students, locals and tourists.
+</string>
+    <string name="title_activity_about_cemetary">aboutCemetary</string>
+    <string name="cemetarypage">Granary Burying Ground</string>
+    <string name="aboutcemetary">Along with the remains of thousands of Bostonians, Massachusetts governors, mayors and other noblemen, the Ground houses the graves of three signers of the Declaration of Independence: Samuel Adams, John Hancock and Robert Treat Paine.
+</string>
+    <string name="title_activity_about_massacre">aboutMassacre</string>
+    <string name="massacrepage">Boston Massacre</string>
+    <string name="aboutmassacrepage">On July 18, 1776, citizens gathered in the street to hear the Declaration of Independence read from the Old State House’s balcony, the first public reading in Massachusetts. In front of the Old State House, a circle of cobblestones commemorates the Boston Massacre.
+</string>
+
 </resources>
