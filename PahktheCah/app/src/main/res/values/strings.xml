@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pahk the Cah</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">777058202404562</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="ToLocationGrid">Change Location</string>
+    <string name="ToLocationTypeMenu">Change Tour</string>
+    <string name="ToLogOutScreen">Log Out</string>
+    <string name="CancelAction">Cancel</string>
+    <string name="to_map_button">Take Me There!</string>
+</resources>
