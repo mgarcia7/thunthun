@@ -17,6 +17,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -27,20 +28,85 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:name=".CategoryPage"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
 
-        <provider
-            android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider777058202404562"
-            android:exported="true" />
+        <activity
+            android:name=".AboutPage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
 
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/facebook_app_id" />
+        <activity
+            android:name=".AboutPage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutAgganis"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutAquarium"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutBeerworks"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutBostonCommons"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutBPL"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutCask"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutCemetary"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutChildrens"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutConstitution"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
+        <activity
+            android:name=".AboutContemporary"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -58,6 +124,24 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" >
         </activity>
-    </application>
+    
+ <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFaneuilHall" /> 
+
+ 
+ <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFenway" /> 
+
+ 
+ <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFours" /> 
+
+ 
+ <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFreedomTrail" /> 
+
+ 
+ <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutGardnerMuseum" /> 
+
+ 
+ <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutHurricane" /> 
+
+ </application>
 
 </manifest>

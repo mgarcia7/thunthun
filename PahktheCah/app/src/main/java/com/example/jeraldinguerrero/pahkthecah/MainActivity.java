@@ -5,6 +5,7 @@ package com.example.jeraldinguerrero.pahkthecah;
         import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+        import android.content.Intent;
 import android.view.View.OnClickListener;
 
 
@@ -111,7 +112,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 }
 */
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity {
 
     //private Button google;
     private Button startButton;
@@ -128,11 +129,26 @@ public class MainActivity extends Activity implements OnClickListener {
 
         //google.setOnClickListener(this);
         startButton = (Button) findViewById(R.id.startbutton);
-        startButton.setOnClickListener(this);
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextActivity = new Intent(MainActivity.this, CategoryPage.class);
+                startActivity(nextActivity);
+            }
+        });
+
 
         aboutButton = (Button) findViewById(R.id.aboutbutton);
-        aboutButton.setOnClickListener(this);
+        aboutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextActivity = new Intent(MainActivity.this, AboutPage.class);
+                startActivity(nextActivity);
+            }
+        });
     }
+}
+    /*
 
     @Override
     public void onClick(View v) {
@@ -140,14 +156,17 @@ public class MainActivity extends Activity implements OnClickListener {
             case R.id.startbutton: {
                 Intent nextActivity = new Intent(MainActivity.this, CategoryPage.class);
                 startActivity(nextActivity);
+                break;
             }
             case R.id.aboutbutton: { //make about page????
-                Intent nextActivity = new Intent(MainActivity.this, CategoryPage.class);
+                Intent nextActivity = new Intent(MainActivity.this, AboutPage.class);
                 startActivity(nextActivity);
+                break;
             }
         }
     }
 }
+*/
 /*
 
 @Override
