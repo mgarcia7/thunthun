@@ -14,8 +14,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +51,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3522,71.1178&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
 
@@ -66,7 +66,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3590,71.0507&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutBeerworks")) {
@@ -78,7 +80,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3464,71.0975&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
 
@@ -91,7 +95,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3550,71.0656&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutBPL")) {
@@ -103,7 +109,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3492,71.0787&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutCask")) {
@@ -115,7 +123,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3473,71.0983&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutCemetary")) {
@@ -127,7 +137,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3574,71.0616&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutChildrens")) {
@@ -139,7 +151,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3516,71.0498&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutConstitution")) {
@@ -151,7 +165,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3767,71.0515&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutContemporary")) {
@@ -163,7 +179,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3528,71.0429&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutFaneuilHall")) {
@@ -175,7 +193,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3600,71.0568&mode='w'");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutFenway")) {
@@ -187,7 +207,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3464,71.0975&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutFours")) {
@@ -199,7 +221,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3649,71.0609&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutFreedomTrail")) {
@@ -211,7 +235,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3550,71.0656&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutGardnerMuseum")) {
@@ -223,7 +249,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3386,71.0989&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutHurricane")) {
@@ -235,7 +263,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3649,71.0609&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutMarathon")) {
@@ -247,7 +277,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3497,71.0786&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutMassacre")) {
@@ -259,7 +291,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3588,71.0578&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutMcganns")) {
@@ -271,7 +305,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3644,71.0616&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutMFA")) {
@@ -283,7 +319,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3392,71.0942&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutOldNorthChurch")) {
@@ -295,7 +333,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3663,71.0545&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutOpera")) {
@@ -307,7 +347,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3542,71.0627&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutRevereHouse")) {
@@ -319,7 +361,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3637,71.0537&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
 
@@ -332,7 +376,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3687,71.0699&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutSymphony")) {
@@ -344,7 +390,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3426,71.0858&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutTDGarden")) {
@@ -356,7 +404,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3663,71.0622&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
 
         else if (className.equals("AboutTrinity")) {
@@ -368,7 +418,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Uri intentUri = Uri.parse("google.navigation:q=42.3550,71.0656&mode='w");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
         }
     }
 }
