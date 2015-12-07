@@ -102,49 +102,51 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFaneuilHall" />
+        <activity android:name=".AboutFaneuilHall" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFenway" />
+        <activity android:name=".AboutFenway" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFours" />
+        <activity android:name=".AboutFours" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutFreedomTrail" />
+        <activity android:name=".AboutFreedomTrail" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutGardnerMuseum" />
+        <activity android:name=".AboutGardnerMuseum" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutHurricane" />
+        <activity android:name=".AboutHurricane" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutMarathon" />
+        <activity android:name=".AboutMarathon" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutScience" />
+        <activity android:name=".AboutScience" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutRevereHouse" />
+        <activity android:name=".AboutRevereHouse" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutOpera" />
+        <activity android:name=".AboutOpera" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutSymphony" />
+        <activity android:name=".AboutSymphony" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutTDGarden" />
+        <activity android:name=".AboutTDGarden" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.AboutOldNorthChurch" />
+        <activity android:name=".AboutOldNorthChurch" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.OptionsPage3" />
+        <activity android:name=".OptionsPage3" />
 
 
-        <activity android:name="com.example.jeraldinguerrero.pahkthecah.OptionsPage2" />
+        <activity android:name=".OptionsPage2" />
+
+        <activity android:name=".OptionsPage" />
 
 
         <!--

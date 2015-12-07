@@ -9,7 +9,7 @@
     android:background="@drawable/blackbackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_optionspage"
-    tools:context="com.example.margaretann.pahkthecah.optionspage">
+    tools:context=".OptionsPage">
 
 
 

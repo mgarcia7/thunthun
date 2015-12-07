@@ -15,9 +15,7 @@ public class CategoryPage extends Activity implements View.OnClickListener {
     private Button historical;
     private Button sports;
     private Button arts;
-
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -32,7 +30,6 @@ public class CategoryPage extends Activity implements View.OnClickListener {
         sports.setOnClickListener(this);
         arts.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v) {
         switch(v.getId()) {

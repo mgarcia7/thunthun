@@ -9,7 +9,7 @@
     android:background="@drawable/blackbackground"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_optionspage3"
-    tools:context="com.example.margaretann.pahkthecah.optionspage3">
+    tools:context=".OptionsPage3">
 
 
     <TextView android:text="@string/historicaltours" android:layout_width="wrap_content"
