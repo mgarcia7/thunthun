@@ -144,7 +144,10 @@ public class MainActivity extends Activity implements OnClickListener {
 
         //google.setOnClickListener(this);
         startButton = (Button) findViewById(R.id.startbutton);
+        startButton.setOnClickListener(this);
+
         aboutButton = (Button) findViewById(R.id.aboutbutton);
+        aboutButton.setOnClickListener(this);
     }
 
     @Override
@@ -159,5 +162,27 @@ public class MainActivity extends Activity implements OnClickListener {
                 startActivity(nextActivity);
             }
         }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Profile profile = Profile.getCurrentProfile();
+
+        // logs install and app activate App Events
+        AppEventsLogger.activateApp(this);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        //logs appDeactivate event
+        AppEventsLogger.deactivateApp(this);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
     }
 }
