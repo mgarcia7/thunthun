@@ -4,25 +4,9 @@ package com.example.jeraldinguerrero.pahkthecah;
         import android.content.Intent;
         import android.os.Bundle;
 import android.view.View;
-import android.view.Menu;
 import android.widget.Button;
 import android.view.View.OnClickListener;
-        import android.widget.EditText;
 
-        import com.facebook.AccessToken;
-        import com.facebook.AccessTokenTracker;
-        import com.facebook.CallbackManager;
-        import com.facebook.FacebookCallback;
-        import com.facebook.FacebookException;
-        import com.facebook.FacebookSdk;
-        import com.facebook.Profile;
-        import com.facebook.ProfileTracker;
-        import com.facebook.appevents.AppEventsLogger;
-        import com.facebook.login.LoginManager;
-        import com.facebook.login.LoginResult;
-        import com.facebook.login.widget.LoginButton;
-
-        import java.util.Arrays;
 
 /*
 public class MainActivity extends Activity implements OnClickListener {
@@ -163,26 +147,28 @@ public class MainActivity extends Activity implements OnClickListener {
             }
         }
     }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        Profile profile = Profile.getCurrentProfile();
-
-        // logs install and app activate App Events
-        AppEventsLogger.activateApp(this);
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-
-        //logs appDeactivate event
-        AppEventsLogger.deactivateApp(this);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-    }
 }
+/*
+
+@Override
+public void onResume() {
+super.onResume();
+Profile profile = Profile.getCurrentProfile();
+
+// logs install and app activate App Events
+AppEventsLogger.activateApp(this);
+}
+
+@Override
+public void onPause() {
+super.onPause();
+
+//logs appDeactivate event
+AppEventsLogger.deactivateApp(this);
+}
+
+@Override
+public void onStop() {
+super.onStop();
+}
+*/
