@@ -28,9 +28,9 @@ public class CategoryPage extends Activity implements View.OnClickListener {
         sports = (Button) findViewById(R.id.sportsbutton);
         arts = (Button) findViewById(R.id.artsbutton);
 
-        historical.setOnClickListener((View.OnClickListener)this);
-        sports.setOnClickListener((View.OnClickListener) this);
-        arts.setOnClickListener((View.OnClickListener) this);
+        historical.setOnClickListener(this);
+        sports.setOnClickListener(this);
+        arts.setOnClickListener(this);
     }
 
     @Override
