@@ -110,6 +110,8 @@
 
         <activity android:name=".AboutFours" />
 
+        <activity android:name=".AboutTrinity" />
+
 
         <activity android:name=".AboutFreedomTrail" />
 

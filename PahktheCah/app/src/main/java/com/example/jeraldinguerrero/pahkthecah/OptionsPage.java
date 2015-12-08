@@ -3,6 +3,7 @@ package com.example.jeraldinguerrero.pahkthecah;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -23,29 +24,36 @@ public class OptionsPage extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_optionspage);
 
-        trinity = (Button) findViewById(R.id.trinitybutton);
-        bostonCommons = (Button) findViewById(R.id.bostoncommonsbutton);
-        cemetary = (Button) findViewById(R.id.cemetarybutton);
-        massacre = (Button) findViewById(R.id.massacrebutton);
-        freedomTrail = (Button) findViewById(R.id.freedomtrailbutton);
-        faneuilHall = (Button) findViewById(R.id.faneuilhallbutton);
-        revereHouse = (Button) findViewById(R.id.reverehousebutton);
-        oldNorthChurch = (Button) findViewById(R.id.oldnorthchurchbutton);
-        constitution = (Button) findViewById(R.id.constitutionbutton);
+        try
+        {
+            setContentView(R.layout.content_optionspage);
+
+            trinity = (Button) findViewById(R.id.trinitybutton);
+            bostonCommons = (Button) findViewById(R.id.bostoncommonsbutton);
+            cemetary = (Button) findViewById(R.id.cemetarybutton);
+            massacre = (Button) findViewById(R.id.massacrebutton);
+            freedomTrail = (Button) findViewById(R.id.freedomtrailbutton);
+            faneuilHall = (Button) findViewById(R.id.faneuilhallbutton);
+            revereHouse = (Button) findViewById(R.id.reverehousebutton);
+            oldNorthChurch = (Button) findViewById(R.id.oldnorthchurchbutton);
+            constitution = (Button) findViewById(R.id.constitutionbutton);
 
 
-        trinity.setOnClickListener(this);
-        bostonCommons.setOnClickListener(this);
-        cemetary.setOnClickListener(this);
-        massacre.setOnClickListener(this);
-        freedomTrail.setOnClickListener(this);
-        faneuilHall.setOnClickListener(this);
-        revereHouse.setOnClickListener(this);
-        oldNorthChurch.setOnClickListener(this);
-        constitution.setOnClickListener(this);
-
+            trinity.setOnClickListener(this);
+            bostonCommons.setOnClickListener(this);
+            cemetary.setOnClickListener(this);
+            massacre.setOnClickListener(this);
+            freedomTrail.setOnClickListener(this);
+            faneuilHall.setOnClickListener(this);
+            revereHouse.setOnClickListener(this);
+            oldNorthChurch.setOnClickListener(this);
+            constitution.setOnClickListener(this);
+        }
+        catch (Exception e)
+        {
+            Log.e("ERROR: ", e.toString());
+        }
     }
 
     @Override
