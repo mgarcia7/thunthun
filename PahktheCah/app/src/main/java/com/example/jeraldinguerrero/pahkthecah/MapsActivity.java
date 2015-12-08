@@ -1,5 +1,5 @@
 package com.example.jeraldinguerrero.pahkthecah;
-
+/*
 
 import android.location.Location;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
 
 public class MapsActivity extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener
@@ -178,8 +179,8 @@ public class MapsActivity extends FragmentActivity implements
 
         }
     }
-}
-/*import android.content.Intent;
+} */
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -214,7 +215,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * If Google Play services is not installed on the device, the user will be prompted to install
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
-
+*/
 
     public void onMapReady(GoogleMap googleMap) {
 
@@ -605,4 +606,3 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 }
- */
