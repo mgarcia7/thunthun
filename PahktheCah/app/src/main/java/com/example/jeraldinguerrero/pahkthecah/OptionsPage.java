@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -118,6 +119,24 @@ public class OptionsPage extends Activity implements View.OnClickListener {
                 break;
             }
         }
+    }
+
+    @Override
+    public boolean onKeyDown(int keycode, KeyEvent e) {
+
+        switch(keycode) {
+            case KeyEvent.KEYCODE_MENU: {
+                Intent nextActivity = new Intent(this, RedirectFromGrid.class);
+                startActivity(nextActivity);
+                return true;
+            }
+            case KeyEvent.KEYCODE_BACK: {
+                finish();
+                return true;
+            }
+        }
+
+        return false;
     }
 
 
