@@ -1,7 +1,9 @@
 package com.example.jeraldinguerrero.pahkthecah;
-/*
 
+
+import android.content.Intent;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
@@ -34,12 +36,9 @@ public class MapsActivity extends FragmentActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
-        //Making sure Google maps is gucci
-        if (checkPlayServices())
-        {
+
             // Building the GoogleApi client
             buildGoogleApiClient();
-        }
         //Declaring map dependencies
         displayLocation();
         onMapReady(mMap);
@@ -76,13 +75,37 @@ public class MapsActivity extends FragmentActivity implements
             }
         }
     }
+
+
+
     //Passes in Map to do some intialization nothing in this case
-    public void onMapReady(GoogleMap map)
+    public void onMapReady(GoogleMap googleMap)
     {
-        map.addMarker(new MarkerOptions()
-                .position(new LatLng(42.349220, -71.106121))
-                .title("Photonics Center"));
+        Intent nextActivity = getIntent();
+        String next = nextActivity.getStringExtra("next");
+        googleMap.setMyLocationEnabled(true);
+        if (next.equals("AboutFreedomTrail")) {
+
+            // Add a marker to Freedom Trail and move the camera
+            LatLng freedom = new LatLng(42.3550, 71.0656);
+            googleMap.addMarker(new MarkerOptions().title("Freedom Trail").position(freedom));
+            googleMap.moveCamera(CameraUpdateFactory.newLatLng(freedom));
+
+            //double dlongtd = result.get(0).getLongitude() , dlattd=result.get(0).getLatitude();
+            Uri intentUri = Uri.parse("https://maps.google.com/maps?f=d&daddr=Freedom+Trail"//"google.navigation:q=42.3550,71.0656"
+            );
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
+            mapIntent.setPackage("com.google.android.apps.maps");
+            if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(mapIntent);
+            }
+
+
     }
+
+
+
+}
     //Connects app to Google API
     @Override
     protected void onStart()
@@ -129,6 +152,8 @@ public class MapsActivity extends FragmentActivity implements
     {
 
     }
+
+
     //Connecting to actual client
     protected synchronized void buildGoogleApiClient()
     {
@@ -137,31 +162,7 @@ public class MapsActivity extends FragmentActivity implements
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API).build();
     }
-    //Checking if we are connected
-    private boolean checkPlayServices()
-    {
-        int resultCode = GooglePlayServicesUtil
-                .isGooglePlayServicesAvailable(this);
-        if (resultCode != ConnectionResult.SUCCESS)
-        {
-            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode))
-            {
 
-            }
-            else
-            {
-                Toast.makeText(getApplicationContext(),
-                        "This device is not supported.", Toast.LENGTH_LONG)
-                        .show();
-                finish();
-            }
-            return false;
-        }
-        else
-        {
-            return true;
-        }
-    }
     //Update the live location dot
     private void displayLocation()
     {
@@ -179,7 +180,10 @@ public class MapsActivity extends FragmentActivity implements
 
         }
     }
-} */
+
+}
+
+/*
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.app.FragmentActivity;
@@ -215,7 +219,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * If Google Play services is not installed on the device, the user will be prompted to install
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
-*/
+
 
     public void onMapReady(GoogleMap googleMap) {
 
@@ -406,6 +410,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
 */
+/*
         else if (next == "AboutFreedomTrail") {
             // Add a marker to Freedom Trail and move the camera
             LatLng freedom = new LatLng(42.3550, 71.0656);
@@ -419,7 +424,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(mapIntent);
             }
         }
-/*
+
         else if (className.equals("AboutGardnerMuseum")) {
             // Add a marker to Isabella Stewart Gardner Museum and move the camera
             LatLng isabella = new LatLng(42.3386,71.0989);
@@ -606,6 +611,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         else
             map.addMarker(new MarkerOptions()
                     .position(new LatLng(42.349220, -71.106121))
-                    .title("Photonics Center")); */
+                    .title("Photonics Center"));
     }
 }
+*/
