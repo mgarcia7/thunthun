@@ -31,6 +31,13 @@ public class AboutAquarium extends Activity implements View.OnClickListener {
     }
 
     @Override
+    public void onClick(View v) {
+        Intent nextActivity = new Intent(AboutFreedomTrail.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutFreedomTrail");
+        startActivity(nextActivity);
+    }
+
+    @Override
     public boolean onKeyDown(int keycode, KeyEvent e) {
 
         switch(keycode) {

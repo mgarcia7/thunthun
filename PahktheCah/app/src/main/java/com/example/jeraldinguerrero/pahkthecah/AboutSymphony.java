@@ -27,6 +27,7 @@ public class AboutSymphony extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutSymphony.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutSymphony");
         startActivity(nextActivity);
     }
 

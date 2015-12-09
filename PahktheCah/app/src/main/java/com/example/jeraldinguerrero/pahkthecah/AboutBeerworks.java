@@ -27,8 +27,11 @@ public class AboutBeerworks extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutBeerworks.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutBeerworks");
         startActivity(nextActivity);
     }
+
+
 
     @Override
     public boolean onKeyDown(int keycode, KeyEvent e) {

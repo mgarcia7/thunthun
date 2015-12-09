@@ -27,6 +27,7 @@ public class AboutTDGarden extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutTDGarden.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutTDGarden");
         startActivity(nextActivity);
     }
 

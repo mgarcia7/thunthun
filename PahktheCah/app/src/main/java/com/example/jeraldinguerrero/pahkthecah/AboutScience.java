@@ -27,6 +27,7 @@ public class AboutScience extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutScience.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutScience");
         startActivity(nextActivity);
     }
 

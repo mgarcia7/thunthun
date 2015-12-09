@@ -27,6 +27,7 @@ public class AboutOpera extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutOpera.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutOpera");
         startActivity(nextActivity);
     }
 

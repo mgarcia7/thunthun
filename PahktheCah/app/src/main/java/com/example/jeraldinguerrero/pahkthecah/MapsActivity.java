@@ -86,7 +86,7 @@ public class MapsActivity extends FragmentActivity implements
 
         googleMap.setMyLocationEnabled(true);
 
-        switch
+        //SWITCH STATEMENT INSTEAD
         if (next.equals("AboutFreedomTrail")) {
 
             // Add a marker to Freedom Trail and move the camera
