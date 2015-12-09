@@ -27,6 +27,7 @@ public class AboutConstitution extends Activity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutConstitution.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutConstitution");
         startActivity(nextActivity);
     }
 

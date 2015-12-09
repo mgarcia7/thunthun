@@ -36,6 +36,7 @@ public class AboutBostonCommons extends Activity implements View.OnClickListener
         switch(keycode) {
             case KeyEvent.KEYCODE_MENU: {
                 Intent nextActivity = new Intent(this, RedirectFromGrid.class);
+                nextActivity.putExtra("next", "AboutBostonCommons");
                 startActivity(nextActivity);
                 return true;
             }

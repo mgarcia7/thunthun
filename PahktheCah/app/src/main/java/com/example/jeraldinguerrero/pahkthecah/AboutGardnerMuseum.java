@@ -27,6 +27,7 @@ public class AboutGardnerMuseum extends Activity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutGardnerMuseum.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutGardnerMuseum");
         startActivity(nextActivity);
     }
 

@@ -27,6 +27,7 @@ public class AboutChildrens extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutChildrens.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutChildrens");
         startActivity(nextActivity);
     }
 

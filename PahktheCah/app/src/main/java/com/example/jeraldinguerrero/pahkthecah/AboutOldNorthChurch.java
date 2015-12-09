@@ -27,6 +27,7 @@ public class AboutOldNorthChurch extends Activity implements View.OnClickListene
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutOldNorthChurch.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutOldNorthChurch");
         startActivity(nextActivity);
     }
 

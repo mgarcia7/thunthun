@@ -27,6 +27,7 @@ public class AboutTrinity extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutTrinity.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutTrinity");
         startActivity(nextActivity);
     }
 

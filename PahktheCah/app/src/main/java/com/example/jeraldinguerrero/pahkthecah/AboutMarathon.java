@@ -61,6 +61,7 @@ public class AboutMarathon extends Activity implements OnClickListener{
         //makes a new Intent so that you're able to set it up to go to the next place
         //intent( where you are, to where you want to go)
         Intent nextActivity = new Intent(AboutMarathon.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutMarathon");
 
         //actually starts that intent 
         startActivity(nextActivity);

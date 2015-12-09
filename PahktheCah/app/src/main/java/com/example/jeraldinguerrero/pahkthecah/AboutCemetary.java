@@ -27,6 +27,7 @@ public class AboutCemetary extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutCemetary.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutCemetary");
         startActivity(nextActivity);
     }
 

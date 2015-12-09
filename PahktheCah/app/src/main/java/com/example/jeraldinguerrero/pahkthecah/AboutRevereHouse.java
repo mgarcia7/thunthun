@@ -27,6 +27,7 @@ public class AboutRevereHouse extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutRevereHouse.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutRevereHouse");
         startActivity(nextActivity);
     }
 

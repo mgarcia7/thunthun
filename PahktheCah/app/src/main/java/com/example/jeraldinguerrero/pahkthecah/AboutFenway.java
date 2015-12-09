@@ -27,6 +27,7 @@ public class AboutFenway extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutFenway.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutFenway");
         startActivity(nextActivity);
     }
 

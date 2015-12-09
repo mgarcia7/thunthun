@@ -27,6 +27,7 @@ public class AboutBPL extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutBPL.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutBPL");
         startActivity(nextActivity);
     }
 

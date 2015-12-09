@@ -27,6 +27,7 @@ public class AboutMFA extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutMFA.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutMFA");
         startActivity(nextActivity);
     }
 

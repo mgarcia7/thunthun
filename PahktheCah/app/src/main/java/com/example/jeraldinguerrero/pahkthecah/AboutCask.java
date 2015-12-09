@@ -27,6 +27,7 @@ public class AboutCask extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutCask.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutCask");
         startActivity(nextActivity);
     }
 
