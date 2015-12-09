@@ -194,7 +194,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap map;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -219,12 +219,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     public void onMapReady(GoogleMap googleMap) {
 
-        Throwable throwable = new Throwable();
-        StackTraceElement[] stackInfoList = throwable.getStackTrace();
-        String className = stackInfoList[1].getClassName();
+       Intent nextActivity = getIntent();
+        String next = nextActivity.getStringExtra("next");
 
-
-        if (className.equals("AboutAgganis")) {
+        if (next == "AboutAgganis") {
             // Add a marker to Agganis Arena and move the camera
             LatLng agganis = new LatLng(42.3522, 71.1178); // HAVE SOMEONE ELSE CONFIRM THAT THESE ARE RIGHT
             googleMap.addMarker(new MarkerOptions().title("Agganis Arena").position(agganis));
@@ -239,7 +237,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
 
-        else if (className.equals("AboutAquarium")) {
+        else if (next == "AboutAquarium") {
             // Add a marker to Aquarium and move the camera
             LatLng aquarium = new LatLng(42.3590, 71.0507);
             googleMap.addMarker(new MarkerOptions().title("New England Aquarium").position(aquarium));
@@ -253,7 +251,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }
 
-        else if (className.equals("AboutBeerworks")) {
+        else if (next == "AboutBeerworks") {
             // Add a marker to Beerworks and move the camera
             LatLng beerworks = new LatLng(42.3464, 71.0975);
             googleMap.addMarker(new MarkerOptions().title("Boston Beer Works").position(beerworks));
@@ -268,7 +266,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
 
-        else if (className.equals("AboutBostonCommons")) {
+        else if (next == "AboutBostonCommons") {
             // Add a marker to Boston Commons and move the camera
             LatLng bostonCommons = new LatLng(42.3550, 71.0656);
             googleMap.addMarker(new MarkerOptions().title("Boston Commons").position(bostonCommons));
@@ -281,7 +279,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(mapIntent);
             }
         }
-
+/*
         else if (className.equals("AboutBPL")) {
             // Add a marker to Boston Public Library and move the camera
             LatLng bpl = new LatLng(42.3492, 71.0787);
@@ -407,8 +405,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(mapIntent);
             }
         }
-
-        else if (className.equals("AboutFreedomTrail")) {
+*/
+        else if (next == "AboutFreedomTrail") {
             // Add a marker to Freedom Trail and move the camera
             LatLng freedom = new LatLng(42.3550, 71.0656);
             googleMap.addMarker(new MarkerOptions().title("Freedom Trail").position(freedom));
@@ -421,7 +419,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(mapIntent);
             }
         }
-
+/*
         else if (className.equals("AboutGardnerMuseum")) {
             // Add a marker to Isabella Stewart Gardner Museum and move the camera
             LatLng isabella = new LatLng(42.3386,71.0989);
@@ -604,5 +602,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(mapIntent);
             }
         }
+
+        else
+            map.addMarker(new MarkerOptions()
+                    .position(new LatLng(42.349220, -71.106121))
+                    .title("Photonics Center")); */
     }
 }

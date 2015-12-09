@@ -27,6 +27,7 @@ public class AboutFreedomTrail extends Activity implements View.OnClickListener 
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutFreedomTrail.this, MapsActivity.class);
+        nextActivity.putExtra("next", "AboutFreedomTrail");
         startActivity(nextActivity);
     }
 
