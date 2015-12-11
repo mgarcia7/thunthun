@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sami.pahkthecah"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.sami.pahkthecah.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.sami.pahkthecah.RedirectFromGrid" />
+        <activity android:name="com.example.sami.pahkthecah.RedirectFromSpecificLocation" />
+        <activity android:name="com.example.sami.pahkthecah.aboutMarathon" />
+        <activity android:name="com.example.sami.pahkthecah.aboutConstitution" />
+        <activity android:name="com.example.sami.pahkthecah.aboutContemporary" />
+        <activity android:name="com.example.sami.pahkthecah.aboutFaneuilHall" />
+        <activity android:name="com.example.sami.pahkthecah.aboutFenway" />
+        <activity android:name="com.example.sami.pahkthecah.aboutFoursRestaurant" />
+        <activity android:name="com.example.sami.pahkthecah.aboutFreedomTrail" />
+        <activity android:name="com.example.sami.pahkthecah.aboutGardnerMuseum" />
+        <activity android:name="com.example.sami.pahkthecah.aboutHurricane" />
+    </application>
+
+</manifest>
