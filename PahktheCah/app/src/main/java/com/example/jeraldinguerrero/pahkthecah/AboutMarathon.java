@@ -57,12 +57,12 @@ public class AboutMarathon extends Activity implements OnClickListener{
     public boolean onKeyDown(int keycode, KeyEvent e) {
 
         switch(keycode) {
-            case KeyEvent.KEYCODE_MENU: {
+            case KeyEvent.KEYCODE_MENU: { //if menu is pressed go to menu page
                 Intent nextActivity = new Intent(this, RedirectFromGrid.class);
                 startActivity(nextActivity);
                 return true;
             }
-            case KeyEvent.KEYCODE_BACK: {
+            case KeyEvent.KEYCODE_BACK: { //if back button is pressed go back one page
                 finish();
                 return true;
             }
