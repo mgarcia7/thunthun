@@ -32,8 +32,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/gardnermuseum"/>
 
     <Button
@@ -43,8 +43,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/mfa"/>
 
     <Button
@@ -54,8 +54,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/symphonyhall"/>
 
     <Button
@@ -65,8 +65,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/childrens"/>
 
     <Button
@@ -76,8 +76,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/contemporary"/>
 
     <Button
@@ -87,8 +87,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/aquarium"/>
 
     <Button
@@ -98,8 +98,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/bpl"/>
 
     <Button
@@ -109,8 +109,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/sciencemuseum"/>
 
     <Button
@@ -120,7 +120,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/operahouse"/>
 </RelativeLayout>

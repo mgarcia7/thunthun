@@ -108,6 +108,10 @@
 
         <activity android:name=".AboutFaneuilHall" />
 
+        <activity android:name=".AboutMassacre" />
+
+        <activity android:name=".AboutMcganns" />
+
 
         <activity android:name=".AboutFenway" />
 
@@ -131,18 +135,15 @@
 
         <activity android:name=".AboutScience" />
 
-
         <activity android:name=".AboutRevereHouse" />
 
+        <activity android:name=".AboutMFA" />
 
         <activity android:name=".AboutOpera" />
 
-
         <activity android:name=".AboutSymphony" />
 
-
         <activity android:name=".AboutTDGarden" />
-
 
         <activity android:name=".AboutOldNorthChurch" />
 

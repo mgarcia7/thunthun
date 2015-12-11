@@ -18,7 +18,7 @@ public class AboutMassacre extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.content_about_massacre);
+        setContentView(R.layout.activity_about_massacre);
         google = (Button) findViewById(R.id.googleButton);
 
         google.setOnClickListener(this);

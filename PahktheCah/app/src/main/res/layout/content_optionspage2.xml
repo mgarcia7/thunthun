@@ -31,8 +31,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/agganis"/>
 
     <Button
@@ -42,8 +42,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/fenway"/>
 
     <Button
@@ -53,8 +53,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/cask"/>
 
     <Button
@@ -64,8 +64,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/marathon"/>
 
     <Button
@@ -75,8 +75,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/tdgarden"/>
 
     <Button
@@ -86,8 +86,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/fours"/>
 
     <Button
@@ -97,8 +97,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/beerworks"/>
 
     <Button
@@ -108,8 +108,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/mcganns"/>
 
     <Button
@@ -119,8 +119,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/hurricane"/>
 
 </RelativeLayout>

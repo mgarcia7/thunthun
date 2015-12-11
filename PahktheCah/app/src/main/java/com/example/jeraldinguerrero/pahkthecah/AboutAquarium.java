@@ -27,13 +27,7 @@ public class AboutAquarium extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         Intent nextActivity = new Intent(AboutAquarium.this, MapsActivity.class);
-        startActivity(nextActivity);
-    }
-
-    @Override
-    public void onClick(View v) {
-        Intent nextActivity = new Intent(AboutFreedomTrail.this, MapsActivity.class);
-        nextActivity.putExtra("next", "AboutFreedomTrail");
+        nextActivity.putExtra("next", "AboutAquarium");
         startActivity(nextActivity);
     }
 

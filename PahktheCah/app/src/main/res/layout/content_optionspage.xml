@@ -34,8 +34,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/trinitychurch"/>
 
     <Button
@@ -45,8 +45,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/bostoncommon"/>
 
 
@@ -57,8 +57,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="320dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/cemetary"/>
 
     <Button
@@ -68,8 +68,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/massacre"/>
 
     <Button
@@ -79,8 +79,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/freedomtrail"/>
 
     <Button
@@ -90,8 +90,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="200dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/faneuilhall"/>
 
     <Button
@@ -101,8 +101,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:background="@drawable/reverehouse"/>
 
 
@@ -113,8 +113,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="115dp"
         android:background="@drawable/oldnorthchurch"/>
 
     <Button
@@ -124,8 +124,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="80dp"
-        android:layout_marginStart="245dp"
-        android:layout_marginLeft="245dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
         android:background="@drawable/constitutionmuseum"/>
 
 
