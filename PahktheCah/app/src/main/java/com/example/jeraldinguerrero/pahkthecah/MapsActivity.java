@@ -1,15 +1,18 @@
 package com.example.jeraldinguerrero.pahkthecah;
 
+/////////////////////////////////////////////////////////
+//
+// Thx to Julian for helping us Google Maps API! ~
+//
+/////////////////////////////////////////////////////////
+
 
 import android.content.Intent;
-import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -23,11 +26,9 @@ public class MapsActivity extends FragmentActivity implements
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener
 {
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
-    //Google maps location (used for button)
-    private Location mLastLocation;
 
     // Google client to interact with Google API
-    private GoogleApiClient mGoogleApiClient;
+    private GoogleApiClient mClient;
 
     //When the app is open
     @Override
@@ -37,10 +38,10 @@ public class MapsActivity extends FragmentActivity implements
         setContentView(R.layout.activity_maps);
         setUpMapIfNeeded();
 
-            // Building the GoogleApi client
-            buildGoogleApiClient();
-        //Declaring map dependencies
-        displayLocation();
+        // Building the GoogleApi client
+        buildGoogleApiClient();
+
+        //create the map
         onMapReady(mMap);
     }
 
@@ -49,8 +50,6 @@ public class MapsActivity extends FragmentActivity implements
     {
         //Live locations
         mMap.setMyLocationEnabled(true);
-        //Remove buildings
-        mMap.setBuildingsEnabled(false);
         //Turn off basic menu
         mMap.getUiSettings().setMapToolbarEnabled(false);
         //Set up map click listeners
@@ -60,12 +59,10 @@ public class MapsActivity extends FragmentActivity implements
     //Set up the map the first time
     private void setUpMapIfNeeded()
     {
-        // Do a null check to confirm that we have not already instantiated the map.
+        // check if we already instantiated the map.
         if (mMap == null) {
-            // Try to obtain the map from the SupportMapFragment.
             mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map))
                     .getMap();
-            // Check if we were successful in obtaining the map.
             if (mMap != null)
             {
                 setUpMap();
@@ -73,7 +70,6 @@ public class MapsActivity extends FragmentActivity implements
         }
     }
 
-    //Passes in Map
     public void onMapReady(GoogleMap googleMap)
     {
         Intent nextActivity = getIntent();
@@ -81,7 +77,6 @@ public class MapsActivity extends FragmentActivity implements
 
         googleMap.setMyLocationEnabled(true);
 
-        //SWITCH STATEMENT INSTEAD
         if (next.equals("AboutFreedomTrail")) {
 
             // Add a marker to Freedom Trail and move the camera
@@ -89,7 +84,6 @@ public class MapsActivity extends FragmentActivity implements
             googleMap.addMarker(new MarkerOptions().title("Freedom Trail").position(freedom));
             googleMap.moveCamera(CameraUpdateFactory.newLatLng(freedom));
 
-            //double dlongtd = result.get(0).getLongitude() , dlattd=result.get(0).getLatitude();
             Uri intentUri = Uri.parse("https://maps.google.com/maps?f=d&daddr=Freedom+Trail");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, intentUri);
             mapIntent.setPackage("com.google.android.apps.maps");
@@ -100,7 +94,7 @@ public class MapsActivity extends FragmentActivity implements
 
         else if (next.equals("AboutAgganis")) {
             // Add a marker to Agganis Arena and move the camera
-            LatLng agganis = new LatLng(42.3522, 71.1178); // HAVE SOMEONE ELSE CONFIRM THAT THESE ARE RIGHT
+            LatLng agganis = new LatLng(42.3522, 71.1178);
             googleMap.addMarker(new MarkerOptions().title("Agganis Arena").position(agganis));
             googleMap.moveCamera(CameraUpdateFactory.newLatLng(agganis));
 
@@ -479,17 +473,16 @@ public class MapsActivity extends FragmentActivity implements
             }
         }
 
-}
+    }
     //Connects app to Google API
     @Override
     protected void onStart()
     {
         super.onStart();
-        if (mGoogleApiClient != null)
+        if (mClient != null)
         {
-            mGoogleApiClient.connect();
+            mClient.connect();
         }
-        displayLocation();
     }
     //Upon returning to app
     @Override
@@ -503,22 +496,21 @@ public class MapsActivity extends FragmentActivity implements
     {
 
     }
-    //Detecting a long click (pressing a while on the map)
+
     public void onMapLongClick(LatLng point)
     {
-        ;
+
     }
     //When connected to API
     @Override
     public void onConnected(Bundle bundle)
     {
-        displayLocation();
+        mMap.setMyLocationEnabled(true);
     }
     //When disconnected, try to recon
     @Override
-    public void onConnectionSuspended(int i)
-    {
-        mGoogleApiClient.connect();
+    public void onConnectionSuspended(int i) {
+        mClient.connect();
     }
 
     @Override
@@ -531,28 +523,10 @@ public class MapsActivity extends FragmentActivity implements
     //Connecting to actual client
     protected synchronized void buildGoogleApiClient()
     {
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
+        mClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API).build();
-    }
-
-    //Update the live location dot
-    private void displayLocation()
-    {
-        mLastLocation = LocationServices.FusedLocationApi
-                .getLastLocation(mGoogleApiClient);
-
-        if (mLastLocation != null)
-        {
-            double latitude = mLastLocation.getLatitude();
-            double longitude = mLastLocation.getLongitude();
-            //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 14.0f));
-        }
-        else
-        {
-
-        }
     }
 
 }
